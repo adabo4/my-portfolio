@@ -1,0 +1,199 @@
+#projects {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1em auto;
+    margin-bottom: 10em;
+    text-align: center;
+    /* 
+    background-color: #0a031e;
+    background-color: #3269d9; */
+    background-color: #6499E9;
+    position: relative;
+
+}
+
+/* #projects h2 {
+    margin: 1em;
+    padding-top: 1em;
+
+
+} */
+
+#projects h1 {
+    font-family: var(--font2);
+}
+
+.projects,
+.collab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.projects img,
+.collab img {
+    width: 100%;
+    max-width: 430px;
+    height: 250px;
+    margin: 1em auto;
+    background-color: #fb6fda;
+    /* background-color: #FF6AC2; */
+    /* padding: 1em; */
+    /* border: 1em double #0a031e; */
+    border: 1em double #054a89;
+
+}
+
+.collab img {
+    margin: 1em 5em;
+}
+
+#projects .headline {
+    color: white;
+    margin: 0;
+    padding: 1.5em;
+}
+
+.project-headline {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 1em;
+    font-family: var(--font2);
+
+}
+
+.project-box,
+.collab-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+
+
+}
+
+.solo {
+    position: relative;
+    right: 50%;
+
+}
+
+
+
+.project-icons,
+.collab-icons {
+    position: absolute;
+    bottom: 40%;
+    z-index: 5;
+    font-size: 3em;
+    right: 38%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.2em;
+}
+
+.project-icons a,
+.collab-icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.project-icons a:hover,
+.collab-icons a:hover {
+    color: #82f5ff;
+}
+
+
+.project-box:hover .project-image,
+.collab-box:hover .project-image {
+    filter: brightness(0.7);
+    /* Reduce brightness to make it darker */
+}
+
+.project-box .project-image,
+.collab-box:hover .project-image {
+    transition: filter 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box h3 {
+    text-transform: uppercase;
+    font-family: var(--font2);
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+
+
+@media screen and (max-width: 580px) {
+
+    #projects {
+        margin: 0 auto;
+    }
+
+    #projects h2 {
+        margin: 0;
+
+    }
+
+    .headline h1 {
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .project-headline {
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .projects img,
+    .collab img {
+        margin: 1em 0;
+        max-width: 400px;
+    }
+
+    .project-box,
+    .collab-box {
+        width: 25em;
+    }
+
+
+}
+
+@media screen and (max-width: 390px) {
+
+    #projects {
+        margin: 0 auto;
+    }
+
+    #projects h2 {
+        margin: 0;
+
+    }
+
+    .headline h1 {
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .project-headline {
+        font-size: 1.2em;
+    }
+
+    .project-box,
+    .collab-box {
+        width: 20em;
+    }
+
+}

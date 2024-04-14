@@ -1,0 +1,136 @@
+.top-background {
+    top: 10em;
+    height: 100vh;
+
+
+}
+
+.bottom-background {
+    bottom: -10em;
+    transform: scaleY(-1);
+    ;
+
+    /* Flip the bottom background vertically */
+}
+
+
+#contact {
+    position: relative;
+    z-index: 1;
+    /* Place content above the background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(84, 202, 252);
+    background-color: #9EDDFF;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1500px;
+
+}
+
+#contact h1 {
+    font-family: var(--font2);
+
+}
+
+.top-background,
+.bottom-background {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: url('wave3.svg') no-repeat center;
+    background-size: cover;
+}
+
+
+
+/* #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('wave3.svg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+} */
+
+/* #contact:after {
+    content: "";
+    position: absolute;
+    bottom: -35em;
+    width: 100%;
+    background-image: url("./wave3.svg") no-repeat center center;
+    height: 35em;
+    transform: rotate(180deg);
+
+
+
+
+} */
+
+.contact {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    justify-content: space-around;
+    margin-top: 1em;
+
+
+}
+
+#contact .headline {
+    margin: 0em;
+}
+
+.icons {
+    display: flex;
+
+
+
+
+}
+
+.icons a {
+    cursor: pointer;
+}
+
+
+
+.cont {
+    font-size: 5em;
+    color: #FF6AC2;
+    padding: .2em;
+    position: relative;
+
+
+}
+
+.cont:hover {
+    color: #054a89;
+}
+
+@media screen and (max-width: 768px) {
+
+    #contact {
+        width: 65%;
+        margin: 0 auto;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #contact {
+        width: 80%;
+
+
+    }
+}
