@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1500px;
     margin-top: -2em;
+    margin: -2em auto 0;
 }
 
 #skills h1 {
@@ -40,7 +41,6 @@
     border-bottom-color: dodgerblue;
 }
 
-/*To create pseudo-class */
 .hexagon:before,
 .hexagon:after {
     content: "";
@@ -48,8 +48,6 @@
     position: absolute;
     top: -0.5vh;
     left: -0.5vh;
-
-    /*To Add effect on the background*/
     background: linear-gradient(to left,
             DarkBlue, DodgerBlue);
     border-radius: inherit;
@@ -57,8 +55,6 @@
     width: 100%;
 }
 
-/* Align them in such a way 
-that they form a hexagon */
 .hexagon:before {
     transform: rotate(60deg);
 }
@@ -69,12 +65,10 @@ that they form a hexagon */
 
 .icon {
     font-size: 3.2em;
-    /*3.2em*/
     position: absolute;
     z-index: 1;
     left: 32%;
     top: 5%;
-    /* left 22% */
     color: #FF6AC2;
     transform: rotate(30deg);
 }
@@ -84,9 +78,7 @@ that they form a hexagon */
     z-index: 3;
     text-align: center;
     top: 4.6em;
-    /*top 3.3em */
     right: 1.5em;
-    /*right */
     transform: rotate(30deg);
 }
 

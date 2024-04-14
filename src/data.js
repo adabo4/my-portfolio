@@ -16,8 +16,10 @@ const data = [
     },
 
     {
-        name: "HealthyBod",
+        name: "Library Management System",
         img: "./img/project5.png",
+        link: "https://my-library-management-system.netlify.app/",
+        gitLink: "https://github.com/adabo4/LibraryManagementSystem",
         turn: 'right'
     },
     {
