@@ -8,7 +8,6 @@ import { SiPostman } from "react-icons/si";
 import { BsBootstrapFill } from "react-icons/bs";
 import "./Icons.css"
 import { motion } from "framer-motion"
-// import Fade from 'react-reveal/Fade';
 import { Fade } from "react-awesome-reveal";
 import 'animate.css';
 

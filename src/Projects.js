@@ -34,33 +34,6 @@ export default function Projects() {
                             </>
                         )
                     })}
-
-
-                    {/* <div className='project-box'>
-                        <img src="./img/project1.png" alt="" className='project-image' />
-                        <div className="project-icons">
-                            <Link> <AiFillGithub /></Link>
-                            <Link><BiLink className='project-img' /></Link>
-                        </div>
-                    </div>
-
-                    <div className='project-box'>
-                        <img src="./img/project2.png" alt="" />
-                        <div className="project-icons">
-                            <Link> <AiFillGithub /></Link>
-                            <Link><BiLink className='project-img' /></Link>
-                        </div>
-                    </div>
-                    <div className='project-box'>
-                        <img src="./img/project3.png" alt="" />
-                        <Link> <AiFillGithub /></Link>
-                        <Link><BiLink className='project-img' /></Link>
-                    </div>
-                    <div className='project-box'>
-                        <img src="./img/project5.png" alt="" />
-                        <Link> <AiFillGithub /></Link>
-                        <Link><BiLink className='project-img' /></Link>
-                    </div> */}
                 </div>
 
                 <div className="project-headline">
@@ -71,8 +44,9 @@ export default function Projects() {
                     <Fade delay={500}><div className="collab-box">
                         <img src="./img/project6.png" alt="" className='project-image' />
                         <div className="collab-icons">
+                            <Link to="https://github.com/adabo4/vitalis-web.git" target='_blank'><AiFillGithub /></Link>
                             <Link to="https://www.lekarenvitalis.sk" target='_blank'>
-                                <BiLink className='project-img solo' />
+                                <BiLink className='project-img' />
                             </Link>
                         </div>
                     </div></Fade>
