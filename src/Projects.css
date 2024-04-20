@@ -10,7 +10,20 @@
     background-color: #6499E9;
     position: relative;
 
+
+
 }
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
 
 /* #projects h2 {
     margin: 1em;
@@ -29,26 +42,28 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 
-.projects img,
-.collab img {
+.project-image {
     width: 100%;
     max-width: 430px;
-    height: 250px;
+    height: auto;
     margin: 1em auto;
     background-color: #fb6fda;
     /* background-color: #FF6AC2; */
     /* padding: 1em; */
     /* border: 1em double #0a031e; */
     border: 1em double #054a89;
+    filter: brightness(0.7);
+
 
 }
 
-.collab img {
+/* .collab img {
     margin: 1em 5em;
-}
+} */
 
 #projects .headline {
     color: white;
@@ -73,47 +88,67 @@
     width: 30em;
 
 
+
 }
 
 .solo {
     position: relative;
     right: 50%;
-
 }
+
 
 
 
 .project-icons,
 .collab-icons {
     position: absolute;
-    bottom: 40%;
+    top: 45%;
     z-index: 5;
     font-size: 3em;
-    right: 38%;
     display: flex;
     flex-direction: row-reverse;
     gap: 0.2em;
 }
 
-.project-icons a,
+.collab-icons {
+    top: 40%;
+}
+
+.project-icon,
 .collab-icons a {
     text-decoration: none;
+    color: rgb(192, 209, 252);
+    color: rgb(71, 95, 117);
     color: white;
+
+
+    /* width: 50px;
+    height: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    border-radius: 50%; */
+
 }
 
 .project-icons a:hover,
 .collab-icons a:hover {
     color: #82f5ff;
+    color: rgb(112, 164, 213);
 }
+
+.blue-icon {
+    color: rgb(71, 95, 117);
+
+}
+
 
 
 .project-box:hover .project-image,
 .collab-box:hover .project-image {
-    filter: brightness(0.7);
+    filter: brightness(0.9);
     /* Reduce brightness to make it darker */
 }
 
-.project-box .project-image,
+.project-box:hover .project-image,
 .collab-box:hover .project-image {
     transition: filter 0.3s;
     /* Add a smooth transition effect */
@@ -157,7 +192,7 @@
 
 @media screen and (max-width: 480px) {
 
-    .projects img,
+    .project-image,
     .collab img {
         margin: 1em 0;
         max-width: 400px;

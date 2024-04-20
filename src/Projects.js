@@ -2,14 +2,48 @@ import React from 'react'
 import "./Projects.css"
 import { AiFillGithub } from "react-icons/ai"
 import { BiLink } from "react-icons/bi"
+import { FaInfoCircle } from "react-icons/fa";
 import { Link } from "react-router-dom"
 import data from "./data"
 import { Fade, Slide } from "react-awesome-reveal";
+import ProjectDetail from "./ProjectDetail"
+import { useState } from 'react';
 
 export default function Projects() {
+
+    const [showMainDetail, setShowMainDetail] = useState(null);
+    const [showCollabDetail, setShowCollabDetail] = useState(null);
+
+    function toggleMainDetail(index) {
+        setShowMainDetail(index);
+    }
+
+    function toggleCollabDetail(index) {
+        setShowCollabDetail(index);
+    }
+
+    const collab_data = [
+        {
+            name: "VITALIS website",
+            img: "./img/lekaren.png",
+            link: "https://www.lekarenvitalis.sk",
+            gitLink: "https://github.com/adabo4/vitalis-web.git",
+            skills: {
+                react: "React.js"
+            },
+            info: "info",
+            text: "I participated in designing and developing our pharmacy website. It is a single page application where I learnt the basics of how React works. I maintain the website and keep the content up do date.",
+            white: "true"
+        },
+    ]
+
+
+
+
     return (
         <>
-            <section id='projects'>
+
+            <section id='projects' >
                 <div className="project-headline">
                     <Fade>
                         <h1>My projects</h1>
@@ -21,15 +55,17 @@ export default function Projects() {
                         return (
                             <>
                                 <Slide direction={item.turn} cascade>
-                                    <div className="project-box">
+                                    <div key={index} className="project-box">
                                         <h3>{item.name}</h3>
                                         <img src={item.img} alt={item.name} className='project-image' />
                                         <div className="project-icons">
-                                            {item.gitLink && <Link to={item.gitLink} target='_blank'> <AiFillGithub /></Link>}
-                                            {item.gitLink ? <Link to={item.link} target='_blank'><BiLink /></Link> : <Link target='_blank' to={item.link} className='solo'><BiLink /></Link>}
+                                            <Link to="/" className={item.white ? "project-icon " : "project-icon blue-icon"} onClick={() => toggleMainDetail(index)}><FaInfoCircle /></Link>
+                                            {item.gitLink && <Link to={item.gitLink} className={item.white ? "project-icon" : "project-icon blue-icon"} target='_blank'> <AiFillGithub /></Link>}
+                                            {item.gitLink ? <Link to={item.link} className={item.white ? "project-icon" : "project-icon blue-icon"} target='_blank'><BiLink /></Link> : <Link target='_blank' to={item.link} className='solo'><BiLink /></Link>}
                                         </div>
                                     </div>
                                 </Slide>
+                                {showMainDetail !== null && <ProjectDetail toggleMainDetail={() => toggleMainDetail(null)} item={data[showMainDetail]} />}
 
                             </>
                         )
@@ -40,17 +76,36 @@ export default function Projects() {
                     <Fade> <h1>Collaborations</h1></Fade>
                 </div>
 
-                <div class="collab">
-                    <Fade delay={500}><div className="collab-box">
-                        <img src="./img/project6.png" alt="" className='project-image' />
-                        <div className="collab-icons">
-                            <Link to="https://github.com/adabo4/vitalis-web.git" target='_blank'><AiFillGithub /></Link>
-                            <Link to="https://www.lekarenvitalis.sk" target='_blank'>
-                                <BiLink className='project-img' />
-                            </Link>
-                        </div>
-                    </div></Fade>
+                <div className="collab">
+                    {collab_data.map((item, index) => {
+                        return (
+                            <>
+                                <Fade delay={500}>
+                                    <div key={index} className="collab-box">
+                                        <img src={item.img} alt="Vitalis project" className='project-image' />
+                                        <div className="collab-icons">
+                                            <Link to="/" onClick={() => toggleCollabDetail(index)}><FaInfoCircle /></Link>
+                                            <Link to={item.gitLink} target='_blank'><AiFillGithub /></Link>
+                                            <Link to={item.link} target='_blank'>
+                                                <BiLink className='project-img' />
+                                            </Link>
+                                        </div>
+                                    </div></Fade>
+                                {showCollabDetail === index && <ProjectDetail toggleCollabDetail={() => toggleCollabDetail(null)} item={item} />}
+                            </>
+                        )
+                    })}
+
                 </div>
-            </section></>
+
+
+
+            </section >
+            {/* Overlay for project details */}
+            {(showMainDetail !== null || showCollabDetail !== null) && (
+                <div className="background-overlay" ></div>
+            )}
+
+        </>
     )
 }

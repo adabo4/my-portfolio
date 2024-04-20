@@ -1,0 +1,143 @@
+.wrapper {
+    background-color: #054a89;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px;
+
+}
+
+
+.detail-container {
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    /* max-width: 700px; */
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    box-shadow: 1px 5px 10px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.img-container {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+
+.img-container img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    max-width: 700px;
+    width: 100%;
+    height: 380px;
+}
+
+.close-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 1em;
+    background-color: #054a89;
+    bottom: 0;
+    right: 0;
+
+}
+
+.detail-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+}
+
+
+.detail-text {
+    /* line-height: 1.5em;
+    text-align: start;
+    padding-right: 1em;
+    width: 100%; */
+    line-height: 1.5em;
+    text-align: start;
+}
+
+.detail-icons {
+    display: flex;
+    font-size: 1.5rem;
+    gap: .2em;
+
+}
+
+.detail-icons a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.detail-skills {
+    display: flex;
+    gap: 1em;
+    margin: 0 1em;
+    flex-wrap: wrap;
+
+}
+
+.detail-skill {
+    border: 1px solid white;
+    padding: .5em;
+    border-radius: 25px;
+}
+
+.detail-text {
+    margin: 1em;
+}
+
+.blur-background {
+    filter: blur(5px);
+    /* Add blur effect */
+}
+
+.show-info {
+    display: block;
+}
+
+@media screen and (max-width: 995px) {
+
+    .wrapper {
+        position: absolute;
+    }
+
+}
+
+@media screen and (max-width: 735px) {
+    .wrapper {
+        position: absolute;
+        width: 100%;
+    }
+
+    .img-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: auto;
+    }
+
+}
