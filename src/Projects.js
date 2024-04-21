@@ -8,6 +8,7 @@ import data from "./data"
 import { Fade, Slide } from "react-awesome-reveal";
 import ProjectDetail from "./ProjectDetail"
 import { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Projects() {
 
@@ -16,10 +17,12 @@ export default function Projects() {
 
     function toggleMainDetail(index) {
         setShowMainDetail(index);
+
     }
 
     function toggleCollabDetail(index) {
         setShowCollabDetail(index);
+
     }
 
     const collab_data = [
@@ -59,7 +62,7 @@ export default function Projects() {
                                         <h3>{item.name}</h3>
                                         <img src={item.img} alt={item.name} className='project-image' />
                                         <div className="project-icons">
-                                            <Link to="/" className={item.white ? "project-icon " : "project-icon blue-icon"} onClick={() => toggleMainDetail(index)}><FaInfoCircle /></Link>
+                                            <HashLink smooth to="/#project" className={item.white ? "project-icon " : "project-icon blue-icon"} onClick={() => toggleMainDetail(index)}><FaInfoCircle /></HashLink>
                                             {item.gitLink && <Link to={item.gitLink} className={item.white ? "project-icon" : "project-icon blue-icon"} target='_blank'> <AiFillGithub /></Link>}
                                             {item.gitLink ? <Link to={item.link} className={item.white ? "project-icon" : "project-icon blue-icon"} target='_blank'><BiLink /></Link> : <Link target='_blank' to={item.link} className='solo'><BiLink /></Link>}
                                         </div>
@@ -84,7 +87,7 @@ export default function Projects() {
                                     <div key={index} className="collab-box">
                                         <img src={item.img} alt="Vitalis project" className='project-image' />
                                         <div className="collab-icons">
-                                            <Link to="/" onClick={() => toggleCollabDetail(index)}><FaInfoCircle /></Link>
+                                            <HashLink smooth to="/#project" onClick={() => toggleCollabDetail(index)}><FaInfoCircle /></HashLink>
                                             <Link to={item.gitLink} target='_blank'><AiFillGithub /></Link>
                                             <Link to={item.link} target='_blank'>
                                                 <BiLink className='project-img' />
@@ -101,7 +104,7 @@ export default function Projects() {
 
 
             </section >
-            {/* Overlay for project details */}
+
             {(showMainDetail !== null || showCollabDetail !== null) && (
                 <div className="background-overlay" ></div>
             )}

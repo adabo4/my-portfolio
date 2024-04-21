@@ -4,8 +4,8 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { ImCss3 } from "react-icons/im";
 import { TbBrandJavascript, TbSql, TbBrandNodejs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa6";
-import { SiPostman } from "react-icons/si";
-import { BsBootstrapFill } from "react-icons/bs";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import "./Icons.css"
 import { motion } from "framer-motion"
 import { Fade } from "react-awesome-reveal";
@@ -44,25 +44,25 @@ export default function Skills() {
         },
         {
             icon: <TbBrandNodejs className='icon' />,
-            label: 'NodeJs',
+            label: 'Node.js',
             rotate: 5,
             turn: 'right'
         },
         {
-            icon: <SiPostman className='icon' />,
-            label: 'Postman',
+            icon: <SiExpress className='icon' />,
+            label: 'Express.js',
             rotate: -5,
+            turn: 'right'
+        },
+        {
+            icon: <SiMongodb className='icon' />,
+            label: 'MongoDB',
+            rotate: 5,
             turn: 'right'
         },
         {
             icon: <TbSql className='icon' />,
             label: 'SQL',
-            rotate: 5,
-            turn: 'right'
-        },
-        {
-            icon: <BsBootstrapFill className='icon' />,
-            label: 'Bootstrap',
             rotate: -5,
             turn: 'right'
         }

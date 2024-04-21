@@ -127,7 +127,7 @@
 @media screen and (max-width: 735px) {
     .wrapper {
         position: absolute;
-        width: 100%;
+        width: 95%;
     }
 
     .img-container {

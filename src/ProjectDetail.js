@@ -21,7 +21,7 @@ export default function ProjectDetail({ item, toggleMainDetail, toggleCollabDeta
         <>
             {isDetailVisible && (
                 <>
-                    <div className="wrapper">
+                    <div id='project' className="wrapper">
                         <div className='detail-container'>
                             <div className="img-container">
                                 <div className="img"><img src={item.img} alt="" /></div>

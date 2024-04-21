@@ -8,7 +8,6 @@ const data = [
         text: "Welsan is a platform dedicated to English education services. I crafted its frontend using React, ensuring client-side rendering and interaction. For the backend infrastructure, I utilised Express.js to manage API requests, implementing functionalities like newsletter distribution. Deployment was executed on a Virtual Private Server, with Nginx configured as a reverse proxy server. This setup efficiently directs incoming requests to their respective frontend or backend components.",
         skills: {
             react: "React.js",
-            nodejs: "Node.js",
             express: "Express.js",
             nginx: "Nginx"
         },
