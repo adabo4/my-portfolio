@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import About from "./About";
+import About from "./AboutUs/About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
