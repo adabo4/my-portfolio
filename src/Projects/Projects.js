@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { BiLink } from "react-icons/bi";
 import { FaInfoCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import data from "./data";
+import data from "../data";
 import { Fade, Slide } from "react-awesome-reveal";
 import ProjectDetail from "./ProjectDetail";
 import { useState } from "react";
