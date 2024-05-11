@@ -1,8 +1,6 @@
 .top-background {
     top: 10em;
-    height: 100vh;
-
-
+    
 }
 
 .bottom-background {
@@ -22,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+   
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
@@ -117,11 +115,22 @@
     color: #054a89;
 }
 
+@media screen and (min-width: 3120px) {
+
+    #contact {
+        height: 1000px;
+        
+    }
+
+   
+    
+}
+
 @media screen and (max-width: 768px) {
 
     #contact {
-        width: 65%;
-        margin: 0 auto;
+        width: 75%;
+        margin: 1em auto;
 
     }
 }
@@ -129,8 +138,6 @@
 @media screen and (max-width: 480px) {
 
     #contact {
-        width: 80%;
-
-
-    }
+        width: 90%;
+           }
 }

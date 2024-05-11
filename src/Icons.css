@@ -36,7 +36,7 @@
     height: 88px;
     box-sizing: border-box;
     transition: all 1s;
-    border: 0.4vh solid transparent;
+    border: .25em solid transparent;
     border-top-color: dodgerblue;
     border-bottom-color: dodgerblue;
 }
@@ -46,8 +46,8 @@
     content: "";
     border: inherit;
     position: absolute;
-    top: -0.5vh;
-    left: -0.5vh;
+    top: -0.3em;
+    left: -0.3em;
     background: linear-gradient(to left,
             DarkBlue, DodgerBlue);
     border-radius: inherit;

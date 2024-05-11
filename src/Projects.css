@@ -10,8 +10,6 @@
     background-color: #6499E9;
     position: relative;
 
-
-
 }
 
 .background-overlay {
@@ -170,11 +168,7 @@
 
 @media screen and (max-width: 580px) {
 
-    #projects {
-        margin: 0 auto;
-    }
-
-    #projects h2 {
+      #projects h2 {
         margin: 0;
 
     }
@@ -194,7 +188,7 @@
 
     .project-image,
     .collab img {
-        margin: 1em 0;
+      
         max-width: 400px;
     }
 
@@ -208,11 +202,7 @@
 
 @media screen and (max-width: 390px) {
 
-    #projects {
-        margin: 0 auto;
-    }
-
-    #projects h2 {
+#projects h2 {
         margin: 0;
 
     }
