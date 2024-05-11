@@ -313,6 +313,12 @@
 
     }
 
+    #about:before {
+        height: 47%;
+    }
+
+   
+
 }
 
 @media (max-width: 350px) {
@@ -326,7 +332,21 @@
         height: 19em;
 
     }
+    #about:before {
+        height: 46%;
+    }
 
 
 
 }
+@media (max-width: 320px) {
+
+   
+    #about:before {
+        height: 47%;
+    }
+
+
+
+}
+
