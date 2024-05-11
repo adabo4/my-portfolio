@@ -47,33 +47,6 @@
     background-size: cover;
 }
 
-
-
-/* #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: url('wave3.svg') no-repeat center center;
-    background-size: cover;
-    position: relative;
-} */
-
-/* #contact:after {
-    content: "";
-    position: absolute;
-    bottom: -35em;
-    width: 100%;
-    background-image: url("./wave3.svg") no-repeat center center;
-    height: 35em;
-    transform: rotate(180deg);
-
-
-
-
-} */
-
 .contact {
     display: flex;
     width: 100%;

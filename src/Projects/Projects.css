@@ -4,9 +4,6 @@
     margin: 1em auto;
     margin-bottom: 10em;
     text-align: center;
-    /* 
-    background-color: #0a031e;
-    background-color: #3269d9; */
     background-color: #6499E9;
     position: relative;
 
@@ -21,14 +18,6 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9998;
 }
-
-
-/* #projects h2 {
-    margin: 1em;
-    padding-top: 1em;
-
-
-} */
 
 #projects h1 {
     font-family: var(--font2);
@@ -50,18 +39,11 @@
     height: auto;
     margin: 1em auto;
     background-color: #fb6fda;
-    /* background-color: #FF6AC2; */
-    /* padding: 1em; */
-    /* border: 1em double #0a031e; */
     border: 1em double #054a89;
     filter: brightness(0.7);
 
 
 }
-
-/* .collab img {
-    margin: 1em 5em;
-} */
 
 #projects .headline {
     color: white;
@@ -118,12 +100,6 @@
     color: rgb(192, 209, 252);
     color: rgb(71, 95, 117);
     color: white;
-
-
-    /* width: 50px;
-    height: 50px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-    border-radius: 50%; */
 
 }
 
