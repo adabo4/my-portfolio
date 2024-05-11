@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Righteous&display=swap');
-
-
-
 
 * {
     margin: 0;
@@ -13,137 +9,10 @@
 
 }
 
-.navbar {
-    height: 80px;
-    background-color: #054a89;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-}
-
-.navbar a {
-    text-decoration: none;
-}
-
-.nav-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 4em;
-
-
-}
-
-.nav-menu h2 {
-    display: none;
-}
-
-.nav-menu li {
-    margin: 1em;
-    list-style: none;
-    font-size: 1.6em;
-    color: white;
-    position: relative;
-
-
-}
-
-.nav-menu li::after {
-    content: "";
-    height: 3px;
-    width: 0;
-    position: absolute;
-    background-color: #FF6AC2;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-
-.nav-menu li:hover::after {
-    width: 100%;
-}
-
 body {
 
     /*#0a0220;*/
     color: white;
     background-color: #9EDDFF;
 
-}
-
-.hamburger-icon {
-    visibility: hidden;
-    margin: 1rem;
-    font-size: 4rem;
-    /* cursor: pointer;
-    padding: 5px;
-    background: transparent;
-    border: none;
-    outline: none;
-    visibility: hidden;
-    opacity: 0;
-    color: black;
-    font-size: 2em; */
-}
-
-.nav-close-btn {
-    display: none;
-    z-index: -22;
-}
-
-
-
-@media screen and (max-width: 1000px) {
-
-    .hamburger-icon {
-        visibility: visible;
-        opacity: 1;
-
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        border: 1px solid red;
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        min-width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-        background-color: #054a89;
-        transition: 1s;
-        z-index: 20;
-        padding: 1rem;
-    }
-
-    .show {
-
-        transition: all 0.25s linear;
-        transform: translateY(0);
-        border: 1px solid black;
-    }
-
-    .hide {
-        height: -1500px;
-        overflow: hidden;
-        transform: translateY(-150vh);
-        transition: all 0.25s linear;
-    }
-
-    .nav-close-btn {
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: white;
-        z-index: 22;
-        visibility: visible;
-        margin: 1rem;
-        font-size: 4rem;
-        display: unset;
-    }
 }
