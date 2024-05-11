@@ -8,6 +8,42 @@
 #skills h1 {
     font-family: var(--font2);
 }
+.skill-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.skill {
+    display: flex;
+    height: 30%;
+    width: 9em;
+   
+}
+
+.skill-level {
+    border: black 1px solid;
+    border-radius: 2px;
+    margin: .3em;
+    
+    
+}
+
+.percentage {
+    background: darkblue;
+    border-radius: 1px;
+    width: 100%;
+    height: 100%;
+    padding:  1em 0.4em; 
+    margin: 0.05em;
+    
+
+}
+
+.percentage.empty {
+    opacity: .1;
+    
+}
 
 .hexagon-container {
     position: relative;
