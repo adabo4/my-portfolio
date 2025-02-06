@@ -19,7 +19,7 @@ const data = [
     {
         name: "StudyTrackr",
         img: "./img/patientstudy.png",
-        link: "https://patientstudy-production.up.railway.app/",
+        link: "https://patientstudy.onrender.com/",
         skills: {
             react: "React.js",
             express: "Express.js",
