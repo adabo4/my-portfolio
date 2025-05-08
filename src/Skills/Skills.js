@@ -7,6 +7,8 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 import "./Icons.css";
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
@@ -21,31 +23,31 @@ export default function Skills() {
   const skillsData = [
     {
       icon: <AiFillHtml5 className="icon" />,
-      label: "HTML",
+      label: "HTML5",
       rotate: 5,
       turn: "left",
-      percentage: 3,
+      percentage: 4,
     },
     {
       icon: <ImCss3 className="icon" />,
-      label: "CSS",
+      label: "CSS3",
       rotate: -5,
       turn: "left",
-      percentage: 3,
+      percentage: 4,
     },
     {
       icon: <TbBrandJavascript className="icon" />,
       label: "JavaScript",
       rotate: 5,
       turn: "left",
-      percentage: 2,
+      percentage: 4,
     },
     {
       icon: <FaReact className="icon" />,
       label: "React.js",
       rotate: -5,
       turn: "left",
-      percentage: 2,
+      percentage: 3,
     },
     {
       icon: <SiExpress className="icon" />,
@@ -74,6 +76,20 @@ export default function Skills() {
       rotate: 5,
       turn: "right",
       percentage: 2,
+    },
+    {
+      icon: <SiTailwindcss className="icon" />,
+      label: "Tailwindcss",
+      rotate: -5,
+      turn: "left",
+      percentage: 1,
+    },
+    {
+      icon: <FaJava className="icon" />,
+      label: "JAVA",
+      rotate: 5,
+      turn: "right",
+      percentage: 1,
     },
   ];
 

@@ -18,28 +18,28 @@ export default function Projects() {
     setShowMainDetail(index);
   }
 
-  function toggleCollabDetail(index) {
-    setShowCollabDetail(index);
-  }
+  // function toggleCollabDetail(index) {
+  //   setShowCollabDetail(index);
+  // }
 
-  const collab_data = [
-    {
-      name: "VITALIS website",
-      img: "./img/lekaren.png",
-      link: "https://www.lekarenvitalis.sk",
-      gitLink: "https://github.com/adabo4/vitalis-web.git",
-      skills: {
-        react: "React.js",
-      },
-      info: "info",
-      text: `I participated in designing and developing our pharmacy website. It is a single page application where I learnt the basics 
-            of how React works. I helped to add features using React libraries such as 'Lightgallery.js' for the Leaflet Gallery component; 'react-slick' for the Logoslider and 'React-GA' for Google Analytics.
-            I studied the documentation for these libraries and worked to adapt them to best fit the needs of our website. This involved experimenting with various settings and configurations to ensure they integrated seamlessly with our design. 
-            I also added data validation for email communication to ensure the accuracy and security of our communication channels.
-            Now I maintain the website and keep the content up do date.`,
-      white: "true",
-    },
-  ];
+  // const collab_data = [
+  //   {
+  //     name: "VITALIS website",
+  //     img: "./img/lekaren.png",
+  //     link: "https://www.lekarenvitalis.sk",
+  //     gitLink: "https://github.com/adabo4/vitalis-web.git",
+  //     skills: {
+  //       react: "React.js",
+  //     },
+  //     info: "info",
+  //     text: `I participated in designing and developing our pharmacy website. It is a single page application where I learnt the basics 
+  //           of how React works. I helped to add features using React libraries such as 'Lightgallery.js' for the Leaflet Gallery component; 'react-slick' for the Logoslider and 'React-GA' for Google Analytics.
+  //           I studied the documentation for these libraries and worked to adapt them to best fit the needs of our website. This involved experimenting with various settings and configurations to ensure they integrated seamlessly with our design. 
+  //           I also added data validation for email communication to ensure the accuracy and security of our communication channels.
+  //           Now I maintain the website and keep the content up do date.`,
+  //     white: "true",
+  //   },
+  // ];
 
   return (
     <>
@@ -119,14 +119,14 @@ export default function Projects() {
           })}
         </div>
 
-        <div className="project-headline">
+        {/* <div className="project-headline">
           <Fade>
             {" "}
             <h1>Collaborations</h1>
           </Fade>
-        </div>
+        </div> */}
 
-        <div className="collab">
+        {/* <div className="collab">
           {collab_data.map((item, index) => {
             return (
               <>
@@ -163,7 +163,7 @@ export default function Projects() {
               </>
             );
           })}
-        </div>
+        </div> */}
       </section>
 
       {(showMainDetail !== null || showCollabDetail !== null) && (

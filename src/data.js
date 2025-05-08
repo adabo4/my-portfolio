@@ -9,11 +9,31 @@ const data = [
         skills: {
             react: "React.js",
             express: "Express.js",
-            nginx: "Nginx"
+            nginx: "Nginx",
+            github: "Github Actions"
         },
         info: "info",
         white: true,
         turn: 'left'
+    },
+
+    {
+        name: "VITALIS",
+        img: "./img/lekaren.png",
+        link: "https://www.lekarenvitalis.sk",
+        gitLink: "https://github.com/adabo4/vitalis-web.git",
+        skills: {
+            react: "React.js",
+            github: "Github Actions"
+        },
+        info: "info",
+        text: `I participated in designing and developing a pharmacy website. It is a single page application where I learnt the basics 
+              of how React works. I helped to add features using React libraries such as 'Lightgallery.js' for the Leaflet Gallery component; 'react-slick' for the Logoslider and 'React-GA' for Google Analytics.
+              I studied the documentation for these libraries and worked to adapt them to best fit the needs of our website. This involved experimenting with various settings and configurations to ensure they integrated seamlessly with our design. 
+              I also added data validation for email communication to ensure the accuracy and security of our communication channels.
+              Now I maintain the website and keep the content up do date.`,
+        white: "true",
+        turn: "right"
     },
 
     {
@@ -59,9 +79,22 @@ const data = [
         info: "info",
         text: "Simple web app that gets the data of your favourite TV show from the movie database through the API built with React. Now you can search your favourite TV show and get inspired what else to watch.",
         white: true,
-        turn: 'right'
+        turn: 'left'
 
-    }
+    },
+    {
+        name: "Riesenia",
+        img: "./img/riesenia.png",
+        link: "https://riesenia-app.netlify.app/",
+        gitLink: "https://github.com/adabo4/riesenia",
+        skills: {
+            vue: "Vue.js",
+        },
+        info: "info",
+        text: `A simplified mock-up of a website riesenia.com that helped me to understand the basics of Vue.js.`,
+        white: "true",
+        turn: "right"
+    },
 
 ]
 
