@@ -12,17 +12,12 @@ import { HashLink } from "react-router-hash-link";
 
 export default function Projects() {
   const [showMainDetail, setShowMainDetail] = useState(null);
-  const [showCollabDetail, setShowCollabDetail] = useState(null);
+
 
   function toggleMainDetail(index) {
     setShowMainDetail(index);
   }
 
-  // function toggleCollabDetail(index) {
-  //   setShowCollabDetail(index);
-  // }
-
-  // const collab_data = [
   //   {
   //     name: "VITALIS website",
   //     img: "./img/lekaren.png",
@@ -118,55 +113,9 @@ export default function Projects() {
             );
           })}
         </div>
-
-        {/* <div className="project-headline">
-          <Fade>
-            {" "}
-            <h1>Collaborations</h1>
-          </Fade>
-        </div> */}
-
-        {/* <div className="collab">
-          {collab_data.map((item, index) => {
-            return (
-              <>
-                <Fade delay={500}>
-                  <div key={index} className="collab-box">
-                    <img
-                      src={item.img}
-                      alt="Vitalis project"
-                      className="project-image"
-                    />
-                    <div className="collab-icons">
-                      <HashLink
-                        smooth
-                        to="/#project"
-                        onClick={() => toggleCollabDetail(index)}
-                      >
-                        <FaInfoCircle />
-                      </HashLink>
-                      <Link to={item.gitLink} target="_blank">
-                        <AiFillGithub />
-                      </Link>
-                      <Link to={item.link} target="_blank">
-                        <BiLink className="project-img" />
-                      </Link>
-                    </div>
-                  </div>
-                </Fade>
-                {showCollabDetail === index && (
-                  <ProjectDetail
-                    toggleCollabDetail={() => toggleCollabDetail(null)}
-                    item={item}
-                  />
-                )}
-              </>
-            );
-          })}
-        </div> */}
       </section>
 
-      {(showMainDetail !== null || showCollabDetail !== null) && (
+      {showMainDetail !== null && (
         <div className="background-overlay"></div>
       )}
     </>
