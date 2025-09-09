@@ -8,7 +8,7 @@ import { FaReact } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 import "./Icons.css";
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
@@ -26,32 +26,39 @@ export default function Skills() {
       label: "HTML5",
       rotate: 5,
       turn: "left",
-      percentage: 4,
+      percentage: 3,
     },
     {
       icon: <ImCss3 className="icon" />,
       label: "CSS3",
       rotate: -5,
       turn: "left",
-      percentage: 4,
+      percentage: 3,
     },
     {
       icon: <TbBrandJavascript className="icon" />,
       label: "JavaScript",
       rotate: 5,
       turn: "left",
-      percentage: 4,
-    },
-    {
-      icon: <FaReact className="icon" />,
-      label: "React.js",
-      rotate: -5,
-      turn: "left",
       percentage: 3,
     },
     {
+      icon: <FaReact className="icon" />,
+      label: "ReactJS",
+      rotate: -5,
+      turn: "left",
+      percentage: 2,
+    },
+    {
+      icon: <SiTypescript className="icon" />,
+      label: "TypeScript",
+      rotate: 5,
+      turn: "right",
+      percentage: 1,
+    },
+    {
       icon: <SiExpress className="icon" />,
-      label: "Express.js",
+      label: "ExpressJS",
       rotate: -5,
       turn: "right",
       percentage: 1,
@@ -65,7 +72,7 @@ export default function Skills() {
     },
     {
       icon: <TbSql className="icon" />,
-      label: "SQL",
+      label: "PostgreSQL",
       rotate: -5,
       turn: "right",
       percentage: 1,
@@ -75,7 +82,7 @@ export default function Skills() {
       label: "Git",
       rotate: 5,
       turn: "right",
-      percentage: 2,
+      percentage: 1,
     },
     {
       icon: <SiTailwindcss className="icon" />,
@@ -83,14 +90,7 @@ export default function Skills() {
       rotate: -5,
       turn: "left",
       percentage: 1,
-    },
-    {
-      icon: <FaJava className="icon" />,
-      label: "JAVA",
-      rotate: 5,
-      turn: "right",
-      percentage: 1,
-    },
+    }
   ];
 
   useEffect(() => {
