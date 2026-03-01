@@ -18,24 +18,6 @@ export default function Projects() {
     setShowMainDetail(index);
   }
 
-  //   {
-  //     name: "VITALIS website",
-  //     img: "./img/lekaren.png",
-  //     link: "https://www.lekarenvitalis.sk",
-  //     gitLink: "https://github.com/adabo4/vitalis-web.git",
-  //     skills: {
-  //       react: "React.js",
-  //     },
-  //     info: "info",
-  //     text: `I participated in designing and developing our pharmacy website. It is a single page application where I learnt the basics 
-  //           of how React works. I helped to add features using React libraries such as 'Lightgallery.js' for the Leaflet Gallery component; 'react-slick' for the Logoslider and 'React-GA' for Google Analytics.
-  //           I studied the documentation for these libraries and worked to adapt them to best fit the needs of our website. This involved experimenting with various settings and configurations to ensure they integrated seamlessly with our design. 
-  //           I also added data validation for email communication to ensure the accuracy and security of our communication channels.
-  //           Now I maintain the website and keep the content up do date.`,
-  //     white: "true",
-  //   },
-  // ];
-
   return (
     <>
       <section id="projects">
@@ -47,9 +29,9 @@ export default function Projects() {
         <div className="projects">
           {data.map((item, index) => {
             return (
-              <>
+              <React.Fragment key={index}>
                 <Slide direction={item.turn} cascade>
-                  <div key={index} className="project-box">
+                  <div className="project-box">
                     <h3>{item.name}</h3>
                     <img
                       src={item.img}
@@ -109,7 +91,7 @@ export default function Projects() {
                     item={data[showMainDetail]}
                   />
                 )}
-              </>
+              </React.Fragment>
             );
           })}
         </div>

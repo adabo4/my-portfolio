@@ -9,6 +9,8 @@ import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { DiNginx } from "react-icons/di";
 import "./Icons.css";
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
@@ -64,6 +66,14 @@ export default function Skills() {
       percentage: 1,
     },
     {
+      icon: <TbBrandNextjs className="icon" />,
+      label: "NextJs",
+      rotate: 5,
+      turn: "right",
+      percentage: 1,
+    },
+
+    {
       icon: <SiMongodb className="icon" />,
       label: "MongoDB",
       rotate: 5,
@@ -73,20 +83,27 @@ export default function Skills() {
     {
       icon: <TbSql className="icon" />,
       label: "PostgreSQL",
-      rotate: -5,
+      rotate: 5,
       turn: "right",
       percentage: 1,
     },
     {
       icon: <FaGitAlt className="icon" />,
       label: "Git",
-      rotate: 5,
+      rotate: -5,
       turn: "right",
       percentage: 1,
     },
     {
       icon: <SiTailwindcss className="icon" />,
       label: "Tailwindcss",
+      rotate: 5,
+      turn: "left",
+      percentage: 1,
+    },
+    {
+      icon: <DiNginx className="icon" />,
+      label: "Nginx",
       rotate: -5,
       turn: "left",
       percentage: 1,
@@ -97,7 +114,7 @@ export default function Skills() {
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting);
     });
-    console.log(isIntersecting);
+
     observer.observe(ref.current);
     return () => observer.disconnect();
   }, [isIntersecting]);
@@ -125,13 +142,13 @@ export default function Skills() {
 
         <div className="hexagon-container" ref={ref}>
           {skillsData.map((skill, index) => (
-            <div className="skill-info">
+            <div className="skill-info" key={`skill-${index}`}>
               <div className="skill">
-                <SkillLevel percentage={skill.percentage}></SkillLevel>
+                <SkillLevel percentage={skill.percentage} skillId={index}></SkillLevel>
               </div>
               <motion.div
                 className={`hex`}
-                key={index}
+                key={`motion-${index}`}
                 whileHover={{
                   x: [0, -5, 5, -5, 0],
                   transition: { duration: 0.5 },

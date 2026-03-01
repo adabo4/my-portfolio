@@ -25,26 +25,16 @@ export default function Form() {
     });
 
 
-
-
-
     const handleChange = (e) => {
         const { name, value } = e.target
         setValues({
             ...values,
             [name]: value
         })
-
-        // if (value.length < 2) {
-        //     setInputError('You must include at least 2 characters');
-        // } else {
-        //     setInputError('');
-        // }
     };
 
 
     const formSubmit = async (e) => {
-
 
         e.preventDefault()
 
@@ -71,10 +61,6 @@ export default function Form() {
         ) {
 
             setIsLoading(true)
-            // const response = await axios.post("https://myportfolio-api-alpha.vercel.app/contact-me", {
-            //     ...values
-            // })
-
             const templateParams = {
                 from_name: values.name,
                 to_name: 'Adriana',
@@ -85,7 +71,7 @@ export default function Form() {
             };
 
             emailjs
-                .send('service_i3j4zf8', 'template_9xhxraj', templateParams, '8e0x-teEx9zwXPXt1')
+                .send('service_9h5c2ti', 'template_9xhxraj', templateParams, '8e0x-teEx9zwXPXt1')
                 .then(
                     () => {
                         setSent(true)
@@ -108,7 +94,6 @@ export default function Form() {
 
 
     }
-
 
     return (
         <>

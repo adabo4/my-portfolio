@@ -19,7 +19,7 @@ const data = [
 
     {
         name: "VITALIS",
-        img: "./img/lekaren.png",
+        img: "/img/lekaren.png",
         link: "https://www.lekarenvitalis.sk",
         gitLink: "https://github.com/adabo4/vitalis-web.git",
         skills: {
@@ -35,10 +35,24 @@ const data = [
         white: "true",
         turn: "right"
     },
-
+    {
+        name: "Carametal",
+        img: "/img/carametal.png",
+        link: "https://www.carametal.sk",
+        gitLink: "https://github.com/adabo4/carametal",
+        skills: {
+            vue: "Next.js",
+            typescript: "Typescript",
+            tailwindcss: "Tailwindcss"
+        },
+        info: "info",
+        text: `I completed a full redesign and technical rebuild of the Carametal company website, transforming the original layout into a modern, responsive, and performance-optimized web application. The project focused on improving user experience, visual clarity, and long-term maintainability. I developed the website using Next.js, TypeScript, and TailwindCSS, optimizing page structure, loading speed, and SEO. My responsibilities included UI redesign, frontend implementation, and production deployment.`,
+        white: "true",
+        turn: "left"
+    },
     {
         name: "StudyTrackr",
-        img: "./img/patientstudy.png",
+        img: "/img/patientstudy.png",
         link: "https://patientstudy.onrender.com/",
         skills: {
             react: "React.js",
@@ -55,7 +69,7 @@ const data = [
 
     {
         name: "Library Management System",
-        img: "/img/project5.png",
+        img: "/img/library.png",
         link: "https://my-library-management-system.netlify.app/",
         skills: {
             javascript: "Javascript",
@@ -70,7 +84,7 @@ const data = [
     },
     {
         name: "Pick your Movie App",
-        img: "./img/movie.png",
+        img: "/img/movie.png",
         link: "https://pick-your-movie-app.vercel.app/",
         skills: {
             react: "React"
@@ -84,7 +98,7 @@ const data = [
     },
     {
         name: "Riesenia",
-        img: "./img/riesenia.png",
+        img: "/img/riesenia.png",
         link: "https://riesenia-app.netlify.app/",
         gitLink: "https://github.com/adabo4/riesenia",
         skills: {
@@ -94,7 +108,7 @@ const data = [
         text: `A simplified mock-up of a website riesenia.com that helped me to understand the basics of Vue.js.`,
         white: "true",
         turn: "right"
-    },
+    }
 
 ]
 
