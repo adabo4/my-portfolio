@@ -56,7 +56,7 @@ export default function Skills() {
       label: "TypeScript",
       rotate: 5,
       turn: "right",
-      percentage: 1,
+      percentage: 2,
     },
     {
       icon: <SiExpress className="icon" />,
@@ -67,7 +67,7 @@ export default function Skills() {
     },
     {
       icon: <TbBrandNextjs className="icon" />,
-      label: "NextJs",
+      label: "NextJS",
       rotate: 5,
       turn: "right",
       percentage: 1,
@@ -96,7 +96,7 @@ export default function Skills() {
     },
     {
       icon: <SiTailwindcss className="icon" />,
-      label: "Tailwindcss",
+      label: "TailwindCSS",
       rotate: 5,
       turn: "left",
       percentage: 1,

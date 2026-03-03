@@ -60,7 +60,7 @@ const data = [
             mongodb: "MongoDb",
             githubactions: "Github Actions"
         },
-        gitLink: "https://github.com/adabo4/patientstudy.git",
+        gitLink: "https://github.com/adabo4/patientstudy",
         info: "info",
         text: "StudyTrackr is a tool that helps me keep track of the current drug distribution to patients who are on drug trials. I used combination of React, Express and MongoDB to store the data. ",
         white: true,
